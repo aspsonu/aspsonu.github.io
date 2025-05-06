@@ -3,84 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sai Pranith Arandkar</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem;
-    }
-    h2 {
-      color: #333;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <title>Sai Pranith Arandkar - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header Section with Navigation -->
   <header>
-    <h1>Sai Pranith Arandkar</h1>
-    <p>Java Backend Developer | MS in Information Systems</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Sai Pranith Arandkar</h1>
+      <p>Java Backend Developer | MS in Information Systems</p>
+    </div>
   </header>
 
-  <section>
+  <!-- About Me Section -->
+  <section id="about">
     <h2>About Me</h2>
-    <p>Experienced Java backend developer with 2.4 years of hands-on experience in developing and deploying enterprise-level applications using Java and Spring framework.</p>
+    <p>Experienced Java backend developer with 2.4 years of hands-on experience in developing and deploying enterprise-level applications using Java and the Spring framework. I am passionate about continuous learning and stay updated with the latest technologies. I am adaptable, reliable, and can work both independently and as part of a team.</p>
   </section>
 
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MS in Information Systems</strong> - Northwest Missouri State University</li>
-      <li><strong>B.Tech in ECE</strong> - Nalla Malla Reddy Engineering College</li>
-    </ul>
-  </section>
-
-  <section>
+  <!-- Experience Section -->
+  <section id="experience">
     <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Senior Systems Engineer, Infosys Ltd (Oct 2021 - Jan 2024)</h3>
+      <p>Developed and deployed enterprise applications using Java and Spring. Led a team of interns and new employees.</p>
+      <ul>
+        <li><strong>Project: E-Government Portal</strong> – Developed enterprise solutions and handled various phases of the project lifecycle.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Graduate Assistant, Northwest Missouri State University (Present)</h3>
+      <p>Assisted faculty and students with administrative tasks, course registration, and resolved enrollment issues.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
     <ul>
-      <li><strong>Graduate Assistant</strong>, NWMSU – Present</li>
-      <li><strong>Senior Systems Engineer</strong>, Infosys Ltd – 2021 to 2024</li>
+      <li><strong>Java</strong></li>
+      <li><strong>Spring Boot</strong></li>
+      <li><strong>MySQL</strong></li>
+      <li><strong>MongoDB</strong></li>
+      <li><strong>REST APIs</strong></li>
     </ul>
   </section>
 
-  <section>
-    <h2>Skills</h2>
-    <p>Java, Spring Boot, MySQL, MongoDB, Git, REST APIs, Leadership</p>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>Eco-friendly Refrigerator</h3>
+      <p>Designed a prototype for an energy-efficient refrigerator that doesn’t emit harmful CFC gases.</p>
+    </div>
+    <div class="project-item">
+      <h3>Smart Trolley</h3>
+      <p>Aimed at reducing wait times in shopping malls by implementing smart billing directly in the trolley.</p>
+    </div>
   </section>
 
-  <section>
+  <!-- Contact Section -->
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: saipranithdsp@gmail.com<br>
-       Phone: +1 636-758-1858<br>
-       LinkedIn: <a href="https://www.linkedin.com/in/dspsonu" target="_blank">dspsonu</a>
-    </p>
+    <p>Email: <a href="mailto:saipranithdsp@gmail.com">saipranithdsp@gmail.com</a></p>
+    <p>Phone: +1 636-758-1858</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dspsonu" target="_blank">dspsonu</a></p>
   </section>
 
+  <!-- Footer Section -->
   <footer>
     &copy; 2025 Sai Pranith Arandkar
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
 </body>
 </html>

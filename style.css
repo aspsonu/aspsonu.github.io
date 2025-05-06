@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  /* Header Content */
+  .header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 3rem;
+    margin: 2rem 0;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Experience Section */
+  .experience-item {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* Project Section */
+  .project-item {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Skills Section */
+  ul li {
+    padding: 5px 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Contact Section */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .header-content h1 {
+      font-size: 2rem;
+    }
+  
+    .header-content p {
+      font-size: 1rem;
+    }
+  }
+  
