@@ -1,154 +1,251 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sai Pranith Arandkar | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Pranith Arandkar - Portfolio</title>
   <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
-      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #121212; /* Dark background for the entire page */
+      color: #e0e0e0; /* Light text for better contrast */
     }
 
-    header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
+    /* Navigation Bar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1f1f1f; /* Darker background for navigation bar */
+      padding: 10px 20px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4caf50; /* Highlighted logo text */
+      text-decoration: none;
+    }
+
+    .navbar .logo span {
+      color: #81c784; /* Slightly lighter green for emphasis */
+      margin-left: 5px;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #e0e0e0; /* Light text for links */
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .navbar a:hover {
+      background-color: #333; /* Subtle hover effect */
+    }
+
+    .navbar a.active {
+      background-color: #4caf50; /* Highlighted active link */
+      color: black; /* Black text for contrast */
+    }
+
+    /* Section Styles */
     section {
-      padding: 60px 20px;
+      padding: 100px 20px;
+      min-height: 100vh;
     }
 
-    .section-title {
+    /* About Me Section */
+    #about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to right, #2c2c2c, #424242); /* Dark gradient background */
+      color: #e0e0e0;
+      padding: 100px 50px;
+      overflow: hidden;
+    }
+
+    #about .content {
+      max-width: 50%;
+      transform: translateX(-100%);
+      animation: slideInLeft 1.5s ease-in-out forwards;
+    }
+
+    #about h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    #about h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    #about ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    #about ul li {
+      margin-bottom: 10px;
+    }
+
+    #about .resume-btn-container {
+      margin-top: 20px;
+    }
+
+    #about .resume-btn {
+      display: inline-block;
+      background: linear-gradient(to right, #2c2c2c, #424242); /* Match the About Me background */
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px; /* Oval shape */
+      border: 2px solid #1e90ff; /* Stylish blue border */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+    }
+
+    #about .resume-btn:hover {
+      transform: scale(1.1);
+      border-color: #4682b4; /* Hover border-color: Stylish Blue */
+      background: #1e90ff; /* Stylish blue background on hover */
+    }
+
+    #about .resume-btn::before {
+      content: "⬇ "; /* Add down arrow before "Resume" */
+    }
+
+    #about .image-container {
+      max-width: 40%;
+      transform: translateX(100%);
+      animation: slideInRight 1.5s ease-in-out forwards;
+    }
+
+    #about img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Animations */
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* Other Sections */
+    #education, #experience, #skills, #projects, #contact {
+      background-color: #1e1e1e; /* Dark background for other sections */
       text-align: center;
-      margin-bottom: 40px;
+      color: #e0e0e0; /* Light text for readability */
     }
 
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .fade-up {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-out;
-    }
-
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
+    #education h2, #experience h2, #skills h2, #projects h2, #contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #81c784; /* Slightly lighter green for headings */
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Sai Pranith Arandkar</h1>
-    <p>Java Backend Developer | MS in Information Systems</p>
-    <p><a href="mailto:saipranithdsp@gmail.com" class="btn btn-light mt-2">Contact Me</a></p>
-  </header>
-
-  <section id="about">
-    <div class="container">
-      <div class="section-title"><h2>About Me</h2></div>
-      <p class="fade-up">Experienced Java backend developer with 2.4 years of hands-on experience in building and deploying enterprise-level applications using Spring Boot and Java. Currently pursuing a Master of Science in Information Systems at NWMSU. Passionate about scalable backend systems and clean architecture.</p>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#about" class="logo">Sai <span>Pranith</span></a>
+    <div class="nav-links">
+      <a href="#about" class="active">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
+  </div>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="content">
+      <h1>Sai Pranith Arandkar</h1>
+      <h2>Java Developer</h2>
+      <ul>
+        <li>Experienced in developing enterprise-level applications using Java and Spring framework.</li>
+        <li>Passionate about continuous learning and staying updated with the latest technologies.</li>
+        <li>Committed to delivering high-quality, scalable, and reliable solutions.</li>
+      </ul>
+      <div class="resume-btn-container">
+        <a href="https://drive.google.com/file/d/1VVOaWfxmVkThM72DUOgCySldDJNAw3NF/view?usp=sharing" 
+           target="_blank" 
+           class="resume-btn">Resume</a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="https://drive.google.com/uc?id=1jsrL0476aGB5b5ZSPXd22_BleQst8BB-" alt="Sai Pranith Arandkar">
+    </div>
+  </section>
+
+  <!-- Placeholder Sections -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>Details about my academic background.</p>
   </section>
 
   <section id="experience">
-    <div class="container">
-      <div class="section-title"><h2>Experience</h2></div>
-      <ul class="fade-up">
-        <li><strong>Senior Systems Engineer</strong> – Infosys Ltd, Hyderabad (Oct 2021 – Jan 2024)</li>
-        <li><strong>Graduate Assistant Admin</strong> – Northwest Missouri State University (Present)</li>
-        <li><strong>Intern</strong> – Black Body Technologies (Jan 2020 – Mar 2020)</li>
-        <li><strong>Intern</strong> – MKR Industrial Automation (Jun 2019)</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="education">
-    <div class="container">
-      <div class="section-title"><h2>Education</h2></div>
-      <ul class="fade-up">
-        <li><strong>Master of Science in Information Systems</strong> – NWMSU, USA (Expected May 2025)</li>
-        <li><strong>B.Tech in Electronics and Communication</strong> – Nalla Malla Reddy Engineering College, Hyderabad (2021)</li>
-      </ul>
-    </div>
+    <h2>Experience</h2>
+    <p>My work experience and internships.</p>
   </section>
 
   <section id="skills">
-    <div class="container">
-      <div class="section-title"><h2>Skills</h2></div>
-      <div class="row fade-up">
-        <div class="col-md-4">
-          <ul>
-            <li>Java, Spring, Spring Boot</li>
-            <li>REST APIs, Microservices</li>
-            <li>MySQL, MongoDB</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul>
-            <li>Firebase, Git, GitHub</li>
-            <li>Angular (Basics)</li>
-            <li>VS Code, Eclipse, STS</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul>
-            <li>Time Management</li>
-            <li>Leadership & Mentoring</li>
-            <li>Problem Solving</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <h2>Skills</h2>
+    <p>Technical and soft skills that I bring to the table.</p>
   </section>
 
-  <section id="awards">
-    <div class="container">
-      <div class="section-title"><h2>Awards & Publications</h2></div>
-      <ul class="fade-up">
-        <li><strong>J-Hub Hackathon 2020</strong> – 1st Prize for Eco-Friendly Refrigerator Prototype</li>
-        <li><strong>Virtual Assistant – BOB</strong> – Published in Indian Patent Journal, Govt of India</li>
-      </ul>
-    </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Some of the key projects I've worked on.</p>
   </section>
 
   <section id="contact">
-    <div class="container">
-      <div class="section-title"><h2>Contact</h2></div>
-      <p class="text-center fade-up">
-        📍 Maryville, Missouri<br>
-        📧 <a href="mailto:saipranithdsp@gmail.com">saipranithdsp@gmail.com</a><br>
-        ☎️ +1 636-758-1858<br>
-        🔗 <a href="https://www.linkedin.com/in/dspsonu" target="_blank">LinkedIn: dspsonu</a>
-      </p>
-    </div>
+    <h2>Contact</h2>
+    <p>Get in touch with me at <strong>saipranithdsp@gmail.com</strong></p>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Sai Pranith Arandkar | All rights reserved.</p>
-  </footer>
-
-  <script>
-    const fadeElements = document.querySelectorAll('.fade-up');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    });
-    fadeElements.forEach(el => observer.observe(el));
-  </script>
 </body>
-
 </html>
