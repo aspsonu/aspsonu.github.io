@@ -1,104 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sai Pranith Arandkar - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>Sai Pranith Arandkar | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <h1>Sai Pranith Arandkar</h1>
+    <p>Java Backend Developer | MS in Information Systems</p>
+    <p><a href="mailto:saipranithdsp@gmail.com" class="btn btn-light mt-2">Contact Me</a></p>
+  </header>
 
-<!-- Header Section -->
-<header class="bg-dark text-white text-center py-5 mb-4">
-  <div class="container">
-    <h1 class="display-4">Sai Pranith Arandkar</h1>
-    <p class="lead">Java Backend Developer | MS in Information Systems</p>
-    <nav>
-      <a href="#about" class="btn btn-outline-light m-1">About</a>
-      <a href="#education" class="btn btn-outline-light m-1">Education</a>
-      <a href="#experience" class="btn btn-outline-light m-1">Experience</a>
-      <a href="#skills" class="btn btn-outline-light m-1">Skills</a>
-      <a href="#awards" class="btn btn-outline-light m-1">Awards</a>
-      <a href="#contact" class="btn btn-outline-light m-1">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- Sections -->
-<div class="container">
-  <section id="about" class="mb-5 fade-in">
-    <h2>About Me</h2>
-    <p>I’m an experienced Java backend developer with 2.4 years of experience in enterprise-level application development using Spring framework. Passionate about learning and innovation.</p>
+  <section id="about">
+    <div class="container">
+      <div class="section-title"><h2>About Me</h2></div>
+      <p class="fade-up">Experienced Java backend developer with 2.4 years of hands-on experience in building and deploying enterprise-level applications using Spring Boot and Java. Currently pursuing a Master of Science in Information Systems at NWMSU. Passionate about scalable backend systems and clean architecture.</p>
+    </div>
   </section>
 
-  <section id="education" class="mb-5 fade-in">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MS in Information Systems</strong>, Northwest Missouri State University – May 2025</li>
-      <li><strong>B.Tech in Electronics and Communication</strong>, NMREC, Hyderabad</li>
-    </ul>
+  <section id="experience">
+    <div class="container">
+      <div class="section-title"><h2>Experience</h2></div>
+      <ul class="fade-up">
+        <li><strong>Senior Systems Engineer</strong> – Infosys Ltd, Hyderabad (Oct 2021 – Jan 2024)</li>
+        <li><strong>Graduate Assistant Admin</strong> – Northwest Missouri State University (Present)</li>
+        <li><strong>Intern</strong> – Black Body Technologies (Jan 2020 – Mar 2020)</li>
+        <li><strong>Intern</strong> – MKR Industrial Automation (Jun 2019)</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="experience" class="mb-5 fade-in">
-    <h2>Experience</h2>
-    <h5>Infosys Ltd – Senior Systems Engineer (Oct 2021 - Jan 2024)</h5>
-    <p>Led backend development, mentored juniors, and delivered enterprise-level solutions.</p>
-
-    <h5>Graduate Assistant – NWMSU</h5>
-    <p>Administrative and student support duties with focus on process efficiency.</p>
-
-    <h5>Internships</h5>
-    <p>IoT and industrial automation roles with sensor integration and PCB design.</p>
+  <section id="education">
+    <div class="container">
+      <div class="section-title"><h2>Education</h2></div>
+      <ul class="fade-up">
+        <li><strong>Master of Science in Information Systems</strong> – NWMSU, USA (Expected May 2025)</li>
+        <li><strong>B.Tech in Electronics and Communication</strong> – Nalla Malla Reddy Engineering College, Hyderabad (2021)</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="skills" class="mb-5 fade-in">
-    <h2>Skills</h2>
-    <ul class="list-group">
-      <li class="list-group-item">Java, Spring Boot, REST APIs</li>
-      <li class="list-group-item">MySQL, MongoDB</li>
-      <li class="list-group-item">Leadership, Team Mentorship</li>
-    </ul>
+  <section id="skills">
+    <div class="container">
+      <div class="section-title"><h2>Skills</h2></div>
+      <div class="row fade-up">
+        <div class="col-md-4">
+          <ul>
+            <li>Java, Spring, Spring Boot</li>
+            <li>REST APIs, Microservices</li>
+            <li>MySQL, MongoDB</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li>Firebase, Git, GitHub</li>
+            <li>Angular (Basics)</li>
+            <li>VS Code, Eclipse, STS</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li>Time Management</li>
+            <li>Leadership & Mentoring</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="awards" class="mb-5 fade-in">
-    <h2>Awards & Publications</h2>
-    <ul>
-      <li><strong>J-Hub Hackathon 2020:</strong> 1st place for eco-friendly IoT refrigerator</li>
-      <li><strong>Virtual Assistant – BOB:</strong> Published in Indian Patent Journal</li>
-    </ul>
+  <section id="awards">
+    <div class="container">
+      <div class="section-title"><h2>Awards & Publications</h2></div>
+      <ul class="fade-up">
+        <li><strong>J-Hub Hackathon 2020</strong> – 1st Prize for Eco-Friendly Refrigerator Prototype</li>
+        <li><strong>Virtual Assistant – BOB</strong> – Published in Indian Patent Journal, Govt of India</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact" class="mb-5 fade-in">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:saipranithdsp@gmail.com">saipranithdsp@gmail.com</a></p>
-    <p>Phone: +1 636-758-1858</p>
-    <p>Location: Maryville, Missouri</p>
+  <section id="contact">
+    <div class="container">
+      <div class="section-title"><h2>Contact</h2></div>
+      <p class="text-center fade-up">
+        📍 Maryville, Missouri<br>
+        📧 <a href="mailto:saipranithdsp@gmail.com">saipranithdsp@gmail.com</a><br>
+        ☎️ +1 636-758-1858<br>
+        🔗 <a href="https://www.linkedin.com/in/dspsonu" target="_blank">LinkedIn: dspsonu</a>
+      </p>
+    </div>
   </section>
-</div>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  &copy; 2025 Sai Pranith Arandkar | All rights reserved.
-</footer>
+  <footer>
+    <p>&copy; 2025 Sai Pranith Arandkar | All rights reserved.</p>
+  </footer>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // Scroll animation
-  const sections = document.querySelectorAll('.fade-in');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
     });
-  }, { threshold: 0.1 });
-
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-</script>
-
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
 </body>
+
 </html>
