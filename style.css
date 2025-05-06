@@ -1,62 +1,23 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
     scroll-behavior: smooth;
+    background-color: #f8f9fa;
+    color: #212529;
   }
   
-  header {
-    background: #004d99;
-    color: #fff;
-    padding: 2rem 1rem;
-    text-align: center;
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
   }
   
-  header nav a {
-    margin: 0 1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
   
-  header nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .section {
-    padding: 3rem 2rem;
-    max-width: 800px;
-    margin: auto;
-    animation: fadeIn 1s ease-in;
-  }
-  
-  .section h2 {
-    color: #004d99;
-  }
-  
-  ul {
-    padding-left: 1.5rem;
-  }
-  
-  footer {
-    text-align: center;
-    background: #ddd;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-  
-  a {
-    color: #004d99;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+  h2 {
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
   }
   
