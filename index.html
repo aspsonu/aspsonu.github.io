@@ -1,270 +1,879 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sai Pranith Arandkar - Portfolio</title>
-  <style>
-    /* General Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <head>
+        <!--========Meta Tags SEO======-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A passionate 'Web Developer' | 'Java Developer' from India. This portfolio showcasing projects, skills, and experiences in web development, software engineering, and more. Discover my work, professional journey, and get in touch for collaborations.">
+        <meta name="keywords" content="Portfolio, Web Developer, Python Developer, Software Engineer, Java Full Stack Developer">
+        
+        <!--=========Canonical Tag=======-->
+        <link rel="canonical" href="https://saipranith.com">
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Gradient background */
-      color: #e0e0e0; /* Light text for better contrast */
-    }
+        <!--========Social Media Tag=========-->
+        <meta property="og:title" content="Sai pranith Arandkar">
+        <meta property="og:description" content="A passionate 'Web Developer' | 'Java Developer' from India. This portfolio showcasing projects, skills, and experiences in web development, software engineering, and more. Discover my work, professional journey, and get in touch for collaborations.">
+        <meta property="og:image" content="https://aspsonu.github.io/img/Preview.png">
+        <meta property="og:url" content="https://saipranith.com">
+        <meta property="og:type" content="website">
 
-    /* Navigation Bar */
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Match page background */
-      padding: 10px 20px;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+        <!--========Title===== -->
+        <title>Sai Pranith Arandkar</title>
 
-    .navbar .logo {
-      font-size: 1.8rem;
-      font-weight: bold; /* Bold text */
-      color: #4caf50; /* Highlighted logo text */
-      text-decoration: none;
-    }
+        <!--========Site Icon===== -->
+        <link rel="shortcut icon" type="image/png" href="./img/Profile.jpeg">
 
-    .navbar .logo span {
-      color: #81c784; /* Slightly lighter green for emphasis */
-      margin-left: 5px;
-    }
+        <!--========Stylesheet===== -->
+        <link rel="stylesheet" href='./files/style.css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    .navbar .nav-links {
-      display: flex;
-      align-items: center;
-    }
+        <!--========BoxIcons===== -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    .navbar a {
-      color: #e0e0e0; /* Light text for links */
-      text-decoration: none;
-      padding: 10px 20px;
-      margin: 0 10px;
-      font-size: 16px;
-      font-weight: bold; /* Bold text */
-      border-radius: 5px;
-      transition: color 0.3s ease; /* Smooth color transition */
-    }
+        <!--========TailwindCSS===== -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    .navbar a:hover {
-      color: #81c784; /* Change text color on hover */
-      background-color: transparent; /* Remove background box */
-    }
+        <!--========TypedJS===== -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    .navbar a.active {
-      color: #4caf50; /* Highlighted active link */
-      background-color: transparent; /* Remove background box */
-    }
+        <!--========JSON Script======-->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "name": "Sai Pranith Arandkar",
+                "url": "https://saipranith.com",
+                "image": "https://aspsonu.github.io/img/Profile.jpeg",
+                "sameAs": [
+                    "https://www.linkedin.com/in/dspsonu",
+                    "https://instagram.com/dspsonu2"
+                ],
+                "jobTitle": "Web Developer",
+                "description": "Passionate web developer with experience in creating responsive and interactive websites.",
+                "alumniOf": {
+                    "@type": "EducationalOrganization",
+                    "name": "Northwest Missouri State University"
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <!-- =========================================NavBar========================================= -->
+        <header class="header" id="header">
+            <a class="logo" href="https://saipranith.com">Sai Pranith Arandkar</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class='bx bx-menu'></i></label>
+            <nav class="navbar" id="myLinks">
+                <a href="#Home" style="--i:1" class="active" >Home</a>
+                <a href="#About" style="--i:2">About</a>
+                <a href="#Education" style="--i:3">Academics</a>
+                <a href="#Experience" style="--i:4">Experience</a>
+                <a href="#Cli-Projects" style="--i:5">Projects</a>
+                <a href="#Skills" style="--i:6">Skills</a>
+                <a href="#Contact" style="--i:7">Contact</a>
+            </nav>
+        </header>
 
-    /* Section Styles */
-    section {
-      padding: 100px 20px;
-      min-height: 100vh;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Match the main background */
-    }
+        <!-- =========================================Home========================================= -->
+        <div id="main-content">
+          <section class="home" id="Home">
+              <div class="home-content">
+                  
+                  <h3>Hi, It's Me</h3>
+                  <h1>Sai Pranith Arandkar</h1>
+                  <h4 style="--i:8">I'm a <span>Java Developer</span> with a<br>
+                    passion for <span class="text"></span></h4>
+                  
+                  <div class="img">
+                      <img src="./img/Profile.jpeg" class="responsive" alt="Name">
+                  </div>
 
-    /* About Me Section */
-    #about {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: white; /* Changed to white */
-      padding: 100px 50px;
-      overflow: hidden;
-    }
+                  <div class="home-sci">
+                      <a href="https://www.linkedin.com/in/dspsonu"style="--i:9" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                      <a href="https://github.com/aspsonu"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://instagram.com/dspsonu2"style="--i:11" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                      <a href="https://www.youtube.com/@techfriezsolutions"style="--i:12" target="_blank"><i class='bx bxl-youtube'></i></a>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1VVOaWfxmVkThM72DUOgCySldDJNAw3NF/view?usp=sharing" style="--i:13" class="btn-box" target="_blank">Download Resume</a>
+              </div>
+          </section>
 
-    #about .content {
-      max-width: 50%;
-      transform: translateX(-100%);
-      animation: slideInLeft 1.5s ease-in-out forwards;
-    }
+          <!-- =========================================About========================================= -->
+          <section id="About">
+              <div class="about reveal">
+                  <div class="custom-shape-divider-top-1720508545">
+                      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                          <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+                      </svg>
+                  </div>
 
-    #about h1 {
-      font-size: 3.6rem; /* Increased by 20% */
-      margin-bottom: 10px;
-    }
+                  <div class="about-img">
+                      <img src="./img/avathar.png" class="abt-res" alt="Name">
+                  </div>
+                  <div class="about-text reveal">
+                      <h2>About <span>Me</span></h2>
+                      <p>I'm a java developer specializing in Spring Framework, with a strong focus on building scalable, reliable, and high-performance applications. 
+                        With over two years of industry experience and a graduate degree in Information Systems, I bring both technical depth and a problem-solving mindset to every project. 
+                        I’m passionate about clean architecture, efficient systems, and collaborating on meaningful software that makes an impact.<br>
+                          <br>
+                          <a href="#Academics" style="--i:11" id="show-edu-btn" class="abtbtn-box">Academics</a>
+                      </p>
+                  </div>
 
-    #about h2 {
-      font-size: 1.8rem; /* Increased by 20% */
-      margin-bottom: 20px;
-    }
+                  <div class="custom-shape-divider-bottom-1720509106">
+                      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                          <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+                      </svg>
+                  </div>
+              </div>
+          </section>
 
-    #about ul {
-      list-style: disc;
-      margin-left: 25px;
-      font-size: 1.2rem; /* Increased by 20% */
-    }
+          <!-- =========================================Experience========================================= -->
+          <section id="Experience">
+            <h1 class="subtitle reveal">My <span>Experience</span></h1>
+            <div id="experience-intro" class="exp-message">
+              <div class="exp-content reveal">
+                <div class="exp-text">
+                  <h3 style="--i:8">Specialized with Hands-on expertise and a passion for<br><span class="exp_text"></span></h3>
+                  <p>
+                    From developing backend systems at Infosys to supporting academic operations as a Graduate Assistant, my journey spans both technical and service-oriented roles. 
+                    Along the way, I’ve tackled hands-on challenges through internships in IoT and PLC programming, while embracing teamwork, leadership, and adaptability in every environment. 
+                    These diverse experiences have shaped a versatile, curious, and impact-driven professional foundation.
+                  </p>
+                </div>
+                <div class="exp-image">
+                  <img src="img/Experience.jpg" alt="Work Experience">
+                </div>
+              </div>
+            </div>
+            
+            <div class="experience-box reveal">
+              <div class="experience-header" onclick="toggleContent(this)">
+                <h3>Work Experience</h3>
+                <span class="toggle-icon">+</span>
+              </div>
+              <div class="experience-content">
+                <div class="experience-item">
+                  <div class="left">
+                    <div class="exp-coin">
+                      <img src="img/Infosys.png" alt="Infosys Ltd" />
+                    </div>                   
+                  </div>
+                  <div class="right speech-bubble">
+                    <div class="exp-box">
+                      <div class="exp-header">
+                        <div class="exp-title">
+                          <h3>Senior Systems Engineer</h3>
+                          <p>Infosys Ltd</p>
+                        </div>
+                        <div class="exp-year">
+                          Oct 2021 - Jan 2024<br>📍 Hyderabad, India
+                        </div>
+                      </div>
+                      <div class="exp-body">
+                        <ul>
+                          <li>✨ Led technical onboarding and mentorship for 4 interns and 5 new engineers, fostering a collaborative team environment.</li>
+                          <li>✨ Developed and maintained backend features for enterprise-level web applications using Java and Spring Boot.</li>
+                          <li>✨ Diagnosed and resolved system issues across multiple test environments, ensuring smooth deployments.</li>
+                          <li>✨ Spearheaded the design and implementation of scalable IT systems with a focus on performance and reliability.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience-item">
+                  <div class="left">
+                    <div class="exp-coin">
+                      <img src="img/NWMSU.webp" alt="NWMSU" />
+                    </div>
+                  </div>
+                  <div class="right speech-bubble">
+                    <div class="exp-box">
+                      <div class="exp-header">
+                        <div class="exp-title">
+                          <h3>Graduate Assistant Administrative</h3>
+                          <p>Northwest Missouri State University</p>
+                        </div>
+                        <div class="exp-year">
+                          May 2024 - April 2025<br>📍 Maryville, USA
+                        </div>
+                      </div>
+                      <div class="exp-body">
+                        <ul>
+                          <li>● Processed university applications efficiently, maintaining records of administrative tasks confidentially.</li>
+                          <li>● Provided individualized guidance on program requirements & promptly resolved enrollment issues.</li>
+                          <li>● Collaborated with faculty & IT services to communicate between students & staff, streamlining academic workflows.</li>
+                          <li>● Developed a strong foundation in working with structured data, student information systems, and process documentation.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    #about ul li {
-      margin-bottom: 10px;
-    }
+            <div class="experience-box reveal">
+              <div class="experience-header" onclick="toggleContent(this)">
+                <h3>Internships</h3>
+                <span class="toggle-icon">+</span>
+              </div>
+              <div class="experience-content">
+                <div class="experience-item">
+                  <div class="left">
+                    <div class="exp-coin">
+                      <img src="img/protonplus.png" alt="Black Body Technologies LLP" />
+                    </div>
+                  </div>
+                  <div class="right speech-bubble">
+                    <div class="exp-box">
+                      <div class="exp-header">
+                        <div class="exp-title">
+                          <h3>IoT Development Intern</h3>
+                          <p>Black Body Technologies LLP</p>
+                        </div>
+                        <div class="exp-year">
+                          Jan 2020 - Mar 2020<br>📍 Hyderabad, India
+                        </div>
+                      </div>
+                      <div class="exp-body">
+                        <ul>
+                          <li>● Designed and developed custom PCBs for embedded and IoT device prototypes, ensuring efficient power consumption and scalability.</li>
+                          <li>● Integrated capacitive touch interfaces with microcontrollers, improving user interaction and system functionality.</li>
+                          <li>● Engineered multi-sensor systems (temperature, humidity, motion) for real-time data acquisition, enhancing product capabilities.</li>
+                          <li>● Programmed and tested microcontrollers, optimizing firmware for precise sensor data processing and system performance.</li>
+                          <li>● Developed wireless communication systems using RF modules, enabling seamless device-to-device communication.</li>
+                          <li>● Actively contributed to R&D in IoT technologies, focusing on data acquisition, system integration, and real-time analysis.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>                    
+                </div>
+                <div class="experience-item">
+                  <div class="left">
+                    <div class="exp-coin">
+                      <img src="img/MKR-Industrial Automation.png" alt="MKR Industrial Automation" />
+                    </div>
+                  </div>
+                  <div class="right speech-bubble">
+                    <div class="exp-box">
+                      <div class="exp-header">
+                        <div class="exp-title">
+                          <h3>Automation Engineer Intern</h3>
+                          <p>MKR Industrial Automations</p>
+                        </div>
+                        <div class="exp-year">
+                          Jun 2019<br>📍 Hyderabad, India
+                        </div>
+                      </div>
+                      <div class="exp-body">
+                        <ul>
+                          <li>● Gained hands-on experience in PLC (Programmable Logic Controller) programming, implementing control systems for real-time industrial applications.</li>
+                          <li>● Collaborated on ladder logic designs, contributing to process automation and improving operational efficiency in manufacturing systems.</li>
+                          <li>● Assisted in troubleshooting and optimizing automation circuits, ensuring minimal downtime and increased system productivity.</li>
+                          <li>● Contributed to testing and commissioning industrial automation systems, ensuring smooth deployment in live environments.</li>
+                          <li>● Designed and developed PCB layouts for industrial automation systems, optimizing for both performance and reliability.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+            <div class="experience-box reveal">
+              <div class="experience-header" onclick="toggleContent(this)">
+                <h3>Non-Technical</h3>
+                <span class="toggle-icon">+</span>
+              </div>
+              <div class="experience-content">
+                <div class="experience-item">
+                  <div class="left">
+                    <div class="exp-coin">
+                      <img src="img/Sodexo.png" alt="Sodexo" class="company-logo" />
+                    </div>
+                  </div>
+                  <div class="right speech-bubble">
+                    <div class="experience-header-row">
+                      <div class="job-info">
+                        <h4>Student Worker</h4>
+                        <p class="company">Sodexo</p>
+                      </div>
+                      <div class="job-dates">
+                        <p class="date">Feb 2025 - May 2025</p>
+                        <p class="location">📍 Maryville, USA</p>
+                      </div>
+                    </div>
+                    <h4 class="description">
+                      ● Delivered excellent customer service in a fast-paced food service environment, ensuring a positive guest experience.<br>                    
+                      ● Assisted with food preparation and timely order delivery, maintaining high standards of cleanliness and food safety. <br>
+                      ● Handled point-of-sale transactions and managed cash register operations with accuracy and efficiency. <br>
+                      ● Collaborated with kitchen and wait staff to ensure smooth communication and workflow during peak hours. <br>
+                      ● Adhered to health and safety protocols, contributing to a clean and organized workspace. <br>
+                      ● Demonstrated flexibility by supporting multiple roles including food runner, cashier, and stock replenisher as needed. <br>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-    #about .resume-btn-container {
-      margin-top: 20px;
-    }
+<!--============================================= Projects ============================================= -->
+                          <!----------------- Client Projects ---------------------->
+          <section id="Cli-Projects">
+            <h1 class="subtitle reveal">Client <span>Projects</span></h1>
+            <br>
+            <div id="pro-intro" class="cli-message">
+              <div class="cli-content">
+                <div class="cli-text">
+                  <p>
+                    From developing backend systems at Infosys to assisting students as a Graduate Assistant, 
+                    I've had the opportunity to work across a wide range of roles. I’ve also explored hands-on technical 
+                    challenges through internships in IoT and PLC programming, and embraced teamwork and service during 
+                    my non-technical role. These experiences have shaped my professional journey and built a foundation of 
+                    versatility, leadership, and curiosity.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cli-grid">
+              <div class="cli-card colored-card-1">
+                <div class="cli-top">
+                  <img src="img/Apple.gif" alt="Project Screenshot" class="cli-image" />
+                </div>
+                <div class="cli-bottom">
+                    <div class="cli-header">
+                      <div class="cli-name-wrapper">
+                        <h3 class="cli-name">E-Government</h3>
+                        <p class="cli-client"><strong>Client:</strong> Apple Inc</p>
+                      </div>
+                      <div class="cli-meta">
+                        <p class="cli-duration">Jan 2022 – Jan 2024</p>
+                        <p class="cli-location">📍 Hyderabad, India</p>
+                      </div>
+                    </div>
+                    <p class="cli-desc">
+                      <br>
+                      <span class="tech-stack">🔎 Java | Spring Boot | MongoDB | Swagger | Postman | Splunk 🔍</span>
+                      <br><br>
+                      👉 Developed and maintained a high-performance enterprise-level web application as part of a cross-functional Agile team. Designed and implemented RESTful APIs, integrated MongoDB for persistent storage, and ensured API reliability through extensive testing with Postman. Actively collaborated in sprint planning, participated in code reviews, and resolved backend issues using Splunk and server monitoring tools. Contributed to API documentation using Swagger UI and supported smooth release cycles by coordinating with QA and DevOps teams.
+                    </p>
+                  <a href="https://google.com" target="_blank" class="cli-link">
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+          
+              <div class="cli-card colored-card-2">
+                <div class="cli-top">
+                  <img src="https://media2.giphy.com/media/kmjdf4CJKVYVQte2SS/giphy.webp" alt="Project Screenshot" class="cli-image" />
+                </div>
+                <div class="cli-bottom">
+                    <div class="cli-header">
+                      <div class="cli-name-wrapper">
+                        <h3 class="cli-name">Vehicle Management</h3>
+                        <p class="cli-client"><strong>Client:</strong> Northwest Missouri State University</p>
+                      </div>
+                      <div class="cli-meta">
+                        <p class="cli-duration">Jan 2025 – May 2025</p>
+                        <p class="cli-location">📍 Missouri, USA</p>
+                      </div>
+                    </div>
+                    <p class="cli-desc">
+                      <br>
+                      <span class="tech-stack">✨ Java | Spring Boot | MySQL | Angular | AWS | REST APIs</span>
+                      <br><br>
+                      👉 Built a full-stack web application for managing vehicle inventory, maintenance schedules, and usage logs. Engineered backend services using Java and Spring Boot, integrated with a MySQL database, and developed a responsive Angular-based frontend. The application featured role-based access control, intuitive UI, and full CRUD functionality. Deployed on AWS for live testing and client demos. Worked closely with frontend developers, faculty, and the client to ensure the system met real-world operational needs.
+                    </p>
+                  <a href="https://google.com" target="_blank" class="cli-link">
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+              <!----------------------------------------My Projects------------------------------>
+            <div id="My-Projects" class="prj reveal">
+              <div class="featured-projects-box reveal">
+                  <h2>My <span>Projects</span>
+                    <br>
+                    <h3>I transform ideas into real-world, functional designs - where creativity meets purpose.</h3>
+                  </h2>
+                  <div class="separator">
+                  </div>
 
-    #about .resume-btn {
-      display: inline-block;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Button matches background */
-      color: white;
-      text-decoration: none;
-      padding: 12px 30px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 50px; /* Oval shape */
-      border: 2px solid #1e90ff; /* Stylish blue border */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
-    }
+                  <!--==================Project #1======================-->
+                  <div class="project project1 reveal">
+                      <div class="project-details-box">
+                          <div class="project-main-info">
+                              <span>Project #1</span>
+                              <h3>Eco-Friendly Refrigerator</h3>
+                              <p>
+                                <br>
+                                  👉 Designed and built a portable, low-power refrigerator prototype that cools faster than conventional models without emitting CFC gases. 
+                                  Focused on sustainability and energy efficiency, the project demonstrated innovative design for off-grid and eco-conscious applications.
+                                  <br><br>
+                                  <strong style="display: block; text-align: center;">
+                                    🏆🥇--- Secured 1st position in J-Hub Hackathon ---🥇🏆
+                                  </strong>
+                              </p>
+                              <div class="project-icons">
+                                  <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bxl-github'></i></a>
+                                  <a href="https://youtu.be/xlH6WHzobcc", target="_blank"><i class='bx bx-link-external'></i></a>
+                              </div>
+                          </div>
+                          <div class="project-tools">
+                              <p><strong><i>✨ IoT | Embedded Systems | Control System | Sustainability</i></strong></p>
+                          </div>
+                      </div>
+                      <div class="project-image-box">
+                          <a href="https://youtu.be/xlH6WHzobcc", target="_blank", class="project-img-link">
+                              <img src="./img/Hackathon.jpg" alt="Project Preview Image" />
+                          </a>
+                      </div>
+                  </div>
+                <!--===============Project #2=============-->
+                <div class="project project2 reveal">
+                    <div class="project-details-box">
+                        <div class="project-main-info">
+                            <span>Project #2</span>
+                            <h3>Smart Trolley</h3>
+                            <p>
+                              <br>
+                                👉 Developed an IoT-based smart trolley to automate the billing process in supermarkets, reducing customer wait times at checkout counters. 
+                                Integrated RFID technology and embedded components to scan items in real-time, enabling the trolley to generate the bill instantly as items are added. 
+                                The system enhances retail efficiency and improves the overall shopping experience by minimizing manual billing efforts.
+                            </p>
+                            <div class="project-icons">
+                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://youtu.be/szw4Al6vDFs", target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+                        <div class="project-tools">
+                            <p>✨ IoT | Automation | Embedded Systems</p>
+                        </div>
+                    </div>
+                    <div class="project-image-box">
+                        <a href="https://youtu.be/szw4Al6vDFs", target="_blank", class="project-img-link">
+                            <img src="./img/Smart Trolley.jpg" alt="Project Preview Image" />
+                        </a>
+                    </div>
+                </div>
+                <!--===========================Project #3==================-->
+                <div class="project project1 reveal">
+                    <div class="project-details-box">
+                        <div class="project-main-info">
+                            <span>Project #3</span>
+                            <h3>Virtual Assistant - BOB</h3>
+                            <p>
+                              <br>
+                                👉 Developed a customizable virtual assistant application using Java in Android Studio, designed for flexible integration with IoT and smart automation projects. 
+                                It features voice-based interaction, a modular and extensible architecture, and allows full user customization.
+                                <br><br>
+                                <strong style="display: block; text-align: center; font-style: italic;">
+                                  🏆🥇Published in the Official Journal – Patent Office of India 🥇🏆<br><br>
+                                </strong>
+                                <span style="display: block; text-align: center;">
+                                  <i>
+                                    App No: 202141032040 A | Issue No: 33/2021 | Date: 08/13/2021
+                                  </i>
+                                </span>
+                            </p>
+                            <div class="project-icons">
+                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://youtu.be/_VlrYOOJYhQ", target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+                        <div class="project-tools">
+                            <p>✨ Java | Android Studio | IoT Integration | Voice Recognition</p>
+                        </div>
+                    </div>
+                    <div class="project-image-box">
+                        <a href="https://youtu.be/_VlrYOOJYhQ", target="_blank", class="project-img-link">
+                            <img src="./img/virtual-assistants.png" alt="Project Preview Image" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </section>
+          <!--======================================== Skills ===================================================== -->
 
-    #about .resume-btn:hover {
-      transform: scale(1.1);
-      border-color: #4682b4; /* Hover border-color: Stylish Blue */
-      background: #1e90ff; /* Stylish blue background on hover */
-    }
 
-    #about .resume-btn::before {
-      content: "⬇ "; /* Add down arrow before "Resume" */
-    }
+          <section id="Skills">
+            <h1 class="subtitle reveal">My <span>Skills</span></h1>
+            <div class="skills-container">
+                <!-- Skill 1 -->
+                <div class="skill-box reveal">
+                    <img src="./img/logos/java.png" alt="Java">
+                    <p>Java</p>
+                </div>
 
-    #about .image-container {
-      max-width: 40%;
-      transform: translateX(100%);
-      animation: slideInRight 1.5s ease-in-out forwards;
-    }
+                <div class="skill-box reveal">
+                    <img src="./img/logos/Spring.png" alt="ReactJS">
+                    <p>Spring</p>
+                </div>
 
-    #about img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    }
+                <div class="skill-box reveal">
+                    <img src="./img/logos/html-5.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
 
-    /* Animations */
-    @keyframes slideInLeft {
-      from {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
+                <div class="skill-box reveal">
+                    <img src="./img/logos/css-3.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
 
-    @keyframes slideInRight {
-      from {
-        transform: translateX(100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
+                <div class="skill-box reveal">
+                    <img src="./img/logos/js.png" alt="JS">
+                    <p>JavaScript</p>
+                </div>
 
-    /* Other Sections */
-    #education, #experience, #skills, #projects, #contact {
-      text-align: center;
-      color: #e0e0e0; /* Light text for readability */
-    }
+                <div class="skill-box reveal">
+                    <img src="./img/logos/Angular.png" alt="Django">
+                    <p>Angular</p>
+                </div>
 
-    #education h2, #experience h2, #skills h2, #projects h2, #contact h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #81c784; /* Slightly lighter green for headings */
-    }
+                <div class="skill-box reveal">
+                    <img src="./img/logos/postman.png" alt="Postman">
+                    <p>Postman</p>
+                </div>
 
-    #education ul {
-      list-style: none; /* Remove bullets */
-      padding: 0;
-      margin: 0;
-    }
+                <div class="skill-box reveal">
+                    <img src="./img/logos/mysql.png" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
 
-    #education ul li {
-      margin-bottom: 20px;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <a href="#about" class="logo">Sai <span>Pranith</span></a>
-    <div class="nav-links">
-      <a href="#about" class="active">About</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
+                <div class="skill-box reveal">
+                    <img src="./img/logos/mongodb.png" alt="MongoDB">
+                    <p>MongoDB</p>
+                </div>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <div class="content">
-      <h1>Sai Pranith Arandkar</h1>
-      <h2>Java Developer</h2>
-      <ul>
-        <li>Experienced in developing enterprise-level applications using Java and Spring framework.</li>
-        <li>Passionate about continuous learning and staying updated with the latest technologies.</li>
-        <li>Committed to delivering high-quality, scalable, and reliable solutions.</li>
-      </ul>
-      <div class="resume-btn-container">
-        <a href="https://drive.google.com/file/d/1VVOaWfxmVkThM72DUOgCySldDJNAw3NF/view?usp=sharing" 
-           target="_blank" 
-           class="resume-btn">Resume</a>
-      </div>
-    </div>
-    <div class="image-container">
-      <!-- <img src="https://drive.google.com/uc?id=1jsrL0476aGB5b5ZSPXd22_BleQst8BB-" alt="Sai Pranith Arandkar"> -->
-    <img src="https://drive.google.com/uc?export=view&id=1DizGZUB_rBjHq6TZIjtGDkGDszrMKh2F" alt="Sai Pranith Arandkar">
-    </div>
-  </section>
+                <div class="skill-box reveal">
+                    <img src="./img/logos/Arduino.png" alt="NodeJS">
+                    <p>Arduino</p>
+                </div>
 
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>Master of Science in Information Systems<br>Northwest Missouri State University, Maryville, Missouri, USA - May 2025</li>
-      <li>Bachelor of Technology in Electronics and Communication Engineering<br>Nalla Malla Reddy Engineering College, Hyderabad, Telangana, India - Jul 2021</li>
-    </ul>
-  </section>
+                <div class="skill-box reveal">
+                    <img src="./img/logos/IoT.png" alt="Wordpress">
+                    <p>IoT</p>
+                </div>
 
-  <!-- Placeholder Sections -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <p>My work experience and internships.</p>
-  </section>
+                <div class="skill-box reveal">
+                    <img src="./img/logos/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>Technical and soft skills that I bring to the table.</p>
-  </section>
+                <div class="skill-box reveal">
+                    <img src="./img/logos/jenkins.png" alt="Linux">
+                    <p>Jenkins</p>
+                </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Some of the key projects I've worked on.</p>
-  </section>
+                <div class="skill-box reveal">
+                    <img src="./img/logos/cpro.png" alt="C Language">
+                    <p>C Language</p>
+                </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Get in touch with me at <strong>saipranithdsp@gmail.com</strong></p>
-  </section>
-</body>
+                <div class="skill-box reveal">
+                    <img src="./img/logos/git.png" alt="Git">
+                    <p>Git</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/github.png" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/vscode.png" alt="VSCode">
+                    <p>VS Code</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/AndroidStudio.png" alt="Powerpoint">
+                    <p>Android Studio</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/php.png" alt="FastAPI">
+                    <p>PHP</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/Mac.png" alt="Linux">
+                    <p>Mac</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/Windows.png" alt="Linux">
+                    <p>Windows</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/linux.png" alt="Linux">
+                    <p>Linux</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/pcb.png" alt="Linux">
+                    <p>PCB</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/plc.png" alt="Linux">
+                    <p>PLC</p>
+                </div>
+
+                <div class="skill-box reveal">
+                    <img src="./img/logos/aws.png" alt="Linux">
+                    <p>AWS</p>
+                </div>
+
+            </div>
+        </section>
+
+
+          <!--========================================== Contact ===================================================== -->
+        <section class="contacts" id="Contact">
+            <div class="contact-text reveal">
+                <h2>Contact <span>Me</span></h2>
+                <center><h4>Get in Touch</h4>
+                <div class="contact-list">
+                    <li><i class="bx bxs-phone-call" ></i>+1 660-528-3223</li>
+                    <li><i class='bx bxl-gmail'></i>saipranithdsp@mail.com</li>
+                    <li><i class='bx bxs-location-plus' ></i>Maryville, Missouri, USA</li>
+                    
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/dspsonu" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/aspsonu" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.youtube.com/@techfriezsolutions"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://instagram.com/dspsonu2" target="_blank"><i class="bx bxl-instagram"></i></a>
+                </div>
+                </center>
+                <div class="last-text">
+                    <p>Developed by  Sai Pranith Arandkar <i class='bx bx-copyright' style="color: white;"></i> All Rights Reserved 2025</p>
+                </div> 
+            </div>
+        </section>
+        </div>
+
+        <!-- =========================================Education========================================= -->
+
+        
+        <section id="Education" class="edu-section">
+          <div class="edu-container">
+            <div class="edu-left">
+              <img src="https://academicmarker.com/wp-content/uploads/2019/11/Masters-Degrees-1.1-Introduction.png" alt="Graduation Visual" class="edu-image">
+            </div>
+            <div class="edu-right">
+              <h2 class="edu-title"><strong>Educational Qualifications</strong></h2>
+              <p class="edu-desc">
+                Here's an overview of my academic journey and achievements.
+              </p>
+            </div>
+          </div>
+                        <!-- =========================================Degrees========================================= -->
+
+          <div class="degrees-section">
+            <h2 class="degrees-title">Degrees Received</h2>
+            <div class="degree-container reveal">
+              <!-- Coin logo -->
+              <div class="coin bounce">
+                <img src="https://i.diplomaframe.com/images/products/insignia/thumb/376368pid68790.webp" alt="Coin Logo" />
+              </div>
+          
+              <!-- Degree Info Box -->
+              <div class="degree-box">
+                <div class="degree-header">
+                  <div class="degree-title">
+                    <h3>M.Sc in Information Systems</h3>
+                    <p>Northwest Missouri State University</p>
+                  </div>
+                  <div class="graduation-year">
+                    Jan 2024 - May 2025
+                  </div>
+                </div>
+                <div class="degree-body">
+                  <ul>
+                    <li>✨ Studied Computer Science and Engineering</li>
+                    <li>✨ Focused on software development and AI</li>
+                    <li>✨ Completed final year project on machine learning</li>
+                  </ul>
+                  <div class="degree-footer">
+                    <a href="https://www.nwmissouri.edu/" target="_blank" class="visit-btn">
+                      Visit College <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="degree-container reveal">
+              <!-- Coin logo -->
+              <div class="coin bounce">
+                <img src="img/NMREC.png" alt="Coin Logo" />
+              </div>
+          
+              <!-- Degree Info Box -->
+              <div class="degree-box">
+                <div class="degree-header">
+                  <div class="degree-title">
+                    <h3>B.Tech in Electronics and Communication Engineering</h3>
+                    <p>Nalla Malla Reddy Engineering College</p>
+                  </div>
+                  <div class="graduation-year">
+                    Aug 2017 - Jul 2021
+                  </div>
+                </div>
+                <div class="degree-body">
+                  <ul>
+                    <li>✨ Studied Computer Science and Engineering</li>
+                    <li>✨ Focused on software development and AI</li>
+                    <li>✨ Completed final year project on machine learning</li>
+                  </ul>
+                  <div class="degree-footer">
+                    <a href="https://www.nwmissouri.edu/" target="_blank" class="visit-btn">
+                      Visit College <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                  <!-- =========================================Certifications========================================= -->
+          
+          <div id="Certifications" class="cert-section">
+            <h2 class="cert-title">Certifications</h2>
+            <div class="cert-grid reveal">
+              <!-- Certificate Card (Repeat for all 10 certs) -->
+              <a href="https://example.com" target="_blank" class="cert-card">
+                <div class="cert-top">
+                  <img src="https://ashutoshhathidara.com/static/media/stanford_logo.2c497738.png" alt="Logo" class="cert-logo" />
+                  <div class="cert-overlay">
+                    <span class="cert-text">CERTIFICATE</span>
+                  </div>
+                </div>
+                <div class="cert-bottom">
+                  <p class="cert-name">HTML-5</p>
+                  <p class="cert-org">Google</p>
+                </div>
+              </a>
+              <!-- 2 -->
+              <a href="https://example.com" target="_blank" class="cert-card">
+                <div class="cert-top">
+                  <img src="https://via.placeholder.com/60" alt="Logo" class="cert-logo" />
+                  <div class="cert-overlay">
+                    <span class="cert-text">CERTIFICATE</span>
+                  </div>
+                </div>
+                <div class="cert-bottom">
+                  <p class="cert-name">Introduction to Python</p>
+                  <p class="cert-org">Google</p>
+                </div>
+              </a>
+              <!-- 3 -->
+              <a href="https://example.com" target="_blank" class="cert-card">
+                <div class="cert-top">
+                  <img src="https://via.placeholder.com/60" alt="Logo" class="cert-logo" />
+                  <div class="cert-overlay">
+                    <span class="cert-text">CERTIFICATE</span>
+                  </div>
+                </div>
+                <div class="cert-bottom">
+                  <p class="cert-name">Python Data Structures</p>
+                  <p class="cert-org">Google</p>
+                </div>
+              </a>
+              <!-- 4 -->
+              <a href="https://example.com" target="_blank" class="cert-card">
+                <div class="cert-top">
+                  <img src="https://via.placeholder.com/60" alt="Logo" class="cert-logo" />
+                  <div class="cert-overlay">
+                    <span class="cert-text">CERTIFICATE</span>
+                  </div>
+                </div>
+                <div class="cert-bottom">
+                  <p class="cert-name">AR & VR</p>
+                  <p class="cert-org">Google</p>
+                </div>
+              </a>
+              <!-- 5 -->
+              <a href="https://example.com" target="_blank" class="cert-card">
+                <div class="cert-top">
+                  <img src="https://via.placeholder.com/60" alt="Logo" class="cert-logo" />
+                  <div class="cert-overlay">
+                    <span class="cert-text">CERTIFICATE</span>
+                  </div>
+                </div>
+                <div class="cert-bottom">
+                  <p class="cert-name">UX Foundation</p>
+                  <p class="cert-org">Adobe</p>
+                </div>
+              </a>
+              <!-- 6 -->
+              <a href="https://example.com" target="_blank" class="cert-card">
+                <div class="cert-top">
+                  <img src="https://via.placeholder.com/60" alt="Logo" class="cert-logo" />
+                  <div class="cert-overlay">
+                    <span class="cert-text">CERTIFICATE</span>
+                  </div>
+                </div>
+                <div class="cert-bottom">
+                  <p class="cert-name">Soft Skills</p>
+                  <p class="cert-org">- IUCEE</p>
+                </div>
+              </a>
+              <!-- 7 -->
+              <a href="https://example.com" target="_blank" class="cert-card">
+                <div class="cert-top">
+                  <img src="https://via.placeholder.com/60" alt="Logo" class="cert-logo" />
+                  <div class="cert-overlay">
+                    <span class="cert-text">CERTIFICATE</span>
+                  </div>
+                </div>
+                <div class="cert-bottom">
+                  <p class="cert-name">Certified AI Engineer</p>
+                  <p class="cert-org">Google</p>
+                </div>
+              </a>
+              <!-- 8 -->
+              <a href="https://example.com" target="_blank" class="cert-card">
+                <div class="cert-top">
+                  <img src="https://via.placeholder.com/60" alt="Logo" class="cert-logo" />
+                  <div class="cert-overlay">
+                    <span class="cert-text">CERTIFICATE</span>
+                  </div>
+                </div>
+                <div class="cert-bottom">
+                  <p class="cert-name">Certified AI Engineer</p>
+                  <p class="cert-org">Google</p>
+                </div>
+              </a>
+              <!-- 9 -->
+              <a href="https://example.com" target="_blank" class="cert-card">
+                <div class="cert-top">
+                  <img src="https://via.placeholder.com/60" alt="Logo" class="cert-logo" />
+                  <div class="cert-overlay">
+                    <span class="cert-text">CERTIFICATE</span>
+                  </div>
+                </div>
+                <div class="cert-bottom">
+                  <p class="cert-name">Certified AI Engineer</p>
+                  <p class="cert-org">Google</p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+                  
+        </section>
+
+        <!--====================== Go Top Icon =============================== -->
+        <a href="#Home" class="top"><i class='bx bx-up-arrow-alt' ></i> </a>
+
+        <!--========Scripts===== -->
+        <script src="./files/script.js"></script>
+
+    </body>  
 </html>
