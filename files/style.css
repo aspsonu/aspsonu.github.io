@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Agustina';
-    src: url('./files/Agustina.woff') format('woff');
+    src: url('./Agustina.woff') format('woff');
 }
 * {
     margin: 0;
