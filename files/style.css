@@ -25,8 +25,6 @@ body {
     border-radius: 6px;
 }
 
-/*navbar*/
-/* General Styles */
 .header {
     position: fixed;
     top: 0;
@@ -39,9 +37,11 @@ body {
     align-items: center;
     z-index: 100;
 }
+
 .scrolled{
     box-shadow: 0 .1rem 1rem #000;
 }
+
 .logo {
     font-family: 'Agustina', 'Rubik', sans-serif;
     font-size: 1.2rem;
@@ -244,8 +244,6 @@ body {
     color: white;
     display: grid;
     grid-template-columns: repeat(2, .5fr);
-    /*align-items: center;*/
-    /*gap: 1.5rem;*/
     width: 100%;
     justify-content: space-between;
     min-height: 100vh;
@@ -260,7 +258,6 @@ body {
     background-size: cover;
     padding-right: 10%;
     margin-top: 10%;
-    /*margin-top: 7.5%;*/
     opacity: 1;
 }
 
@@ -334,7 +331,6 @@ body {
 
 /*=======================================================================Education====================================================*/
 
-/* Ensure hidden by default */
 #Education {
     display: none;
     opacity: 0;
@@ -344,20 +340,19 @@ body {
     min-height: 50vh;
     transition: opacity 0.4s ease-in-out;
     scroll-margin-top: 80px;
-  }
+}
   
-  #Education.show {
+#Education.show {
     display: block;
     opacity: 1;
     animation: fadeIn 1s ease-in-out;
-  }
+}
   
-  #main-content.hide {
+#main-content.hide {
     display: none;
-  }
+}
   
-  /* Education Layout */
-  .edu-container {
+.edu-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -369,16 +364,16 @@ body {
     animation: fadeIn 2s ease-in-out forwards; 
     padding-bottom: 10px;
     margin-bottom: 60px;
-  }
+}
   
-  .edu-left {
+.edu-left {
     flex: 1;
     padding-top: 20px;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
-  }
+}
   
-  .edu-left img.edu-image {
+.edu-left img.edu-image {
     width: 100%;
     height: auto;
     max-width: 90%;
@@ -386,9 +381,9 @@ body {
     transition: transform 0.5s ease-in-out;
     opacity: 0;
     animation: fadeInImage 2s ease-in-out forwards; 
-  }
+}
   
-  .edu-right {
+.edu-right {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -399,23 +394,23 @@ body {
     color: #001C55;
     opacity: 0;
     animation: fadeInText 2s ease-in-out forwards;
-  }
+}
   
   
-  .edu-right h2 {
+.edu-right h2 {
     font-size: 40px;
     margin-bottom: 20px;
     color: #001C55;
-  }
+}
   
-  .edu-right p {
+.edu-right p {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
-  }
+}
 
   
-  .edu-title {
+.edu-title {
     font-size: 50px;
     color: #001C55;
     margin-bottom: 20px;
@@ -423,50 +418,45 @@ body {
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-  }
+}
   
-  .edu-desc {
+.edu-desc {
     font-size: 1.1rem;
     color: #333;
     text-align: left;
     line-height: 1.6;
-  }
-  
-  /* Animations */
+}
 
-/* Fade-in animation for text and image */
 @keyframes fadeIn {
     0% {
       opacity: 0;
-      transform: translateY(30px); /* Start with a small upward movement */
+      transform: translateY(30px);
     }
     100% {
       opacity: 1;
-      transform: translateY(0); /* End with the text in its final position */
+      transform: translateY(0);
     }
-  }
-  
-  /* Fade-in animation for image */
+}
+
   @keyframes fadeInImage {
     0% {
       opacity: 0;
-      transform: scale(2.5); /* Start with zoomed-in image */
+      transform: scale(2.5); 
     }
     100% {
       opacity: 1;
-      transform: scale(1.45); /* End with the image at its normal size */
+      transform: scale(1.45);
     }
   }
-  
-  /* Fade-in animation for the text container */
+
   @keyframes fadeInText {
     0% {
       opacity: 0;
-      transform: translateY(30px); /* Start with a small upward movement */
+      transform: translateY(30px);
     }
     100% {
       opacity: 1;
-      transform: translateY(0); /* End with the text in its final position */
+      transform: translateY(0);
     }
   }
 
@@ -475,10 +465,10 @@ body {
   .degrees-section {
     display: none;
     padding: 60px 0;
-    background-color: #FFFFFF;  /* Background color for the section */
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center vertically */
+    align-items: center;
     min-height: 100vh;
     margin-top: 0;
     transition: background-color 0.4s ease-in-out;
@@ -681,6 +671,7 @@ body {
     justify-items: center;
   }
   
+  
   .cert-card {
     width: 9cm;
     height: 5cm;
@@ -785,19 +776,19 @@ body {
   }
 
   .cert-card:nth-child(1) .cert-top {
-    background-color: #D9534F; /* Red */
+    background-color: #012D61; /* Red */
   }
   
   .cert-card:nth-child(2) .cert-top {
-    background-color: #5BC0DE; /* Blue */
+    background-color: #012D61; /* Blue */
   }
   
   .cert-card:nth-child(3) .cert-top {
-    background-color: #5CB85C; /* Green */
+    background-color: #012D61; /* Green */
   }
   
   .cert-card:nth-child(4) .cert-top {
-    background-color: #F0AD4E; /* Orange */
+    background-color: #F5F5F5; /* Orange */
   }
   
   .cert-card:nth-child(5) .cert-top {
@@ -824,7 +815,46 @@ body {
     background-color: #A0522D; /* Sienna */
   }
   
-  
+  @media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .degree-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .degree-box {
+    width: 90%;
+  }
+
+  .coin {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .edu-image {
+    transform: scale(1); /* Remove zoom effect on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .edu-left, .edu-right {
+    padding: 0;
+  }
+}
 /*=======================================================================Experince====================================================*/
 
 #Experience {
@@ -968,7 +998,6 @@ body {
     line-height: 2;
   }
   
-  /* Body */
   .exp-body ul {
     margin: 0;
     padding-left: 20px;
@@ -977,16 +1006,6 @@ body {
     font-size: large;
     line-height: 2; 
   }
-/* .experience-box {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    border: 1px solid #03fbff;
-    margin: 0 2rem 2rem 2rem;
-    padding: 0.8rem;
-    margin: 0 1rem 2rem 1rem;
-    border: 1px solid rgba(4, 243, 179, 0.3);
-  } */
 
   .experience-box {
     background: #2B2E3B;
@@ -1145,38 +1164,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 130%;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .experience-item {
-      flex-direction: column;
-    }
-  
-    .left {
-      flex-direction: row;
-      margin-bottom: 10px;
-    }
-  
-    .timeline-line {
-      height: 4px;
-      width: 100%;
-      margin-top: 0;
-      margin-left: 10px;
-    }
-  
-    .right {
-      margin-left: 0;
-    }
-  
-    .speech-bubble::before {
-      top: -10px;
-      left: 20px;
-      border-top: none;
-      border-right: 10px solid transparent;
-      border-left: 10px solid transparent;
-      border-bottom: 10px solid #81c784;
-    }
-  }
 
   /*=======================================================================Projects====================================================*/
 
@@ -1245,11 +1232,23 @@ body {
     justify-items: flex-start;
     padding-left: 8%;
     padding-right: 4%;
+    column-gap: 40px;
   }
+
+  @media (max-width: 768px) {
+  .cli-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
   
   .cli-card {
-    width: 16cm;
-    height: 16cm;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     border-radius: 4px;
@@ -1272,13 +1271,14 @@ body {
   }
   
   .cli-image {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   
   .cli-bottom {
-    height: 70%;
+    height: auto;
+    min-height:500px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1390,20 +1390,8 @@ body {
   .colored-card-2 .cli-top {
     background-color: #000000;
   }
-  /*.colored-card-5 {
-    height: 20cm;
-  }*/
-  
-  /* Center last card in grid 
-  .project-grid > .center-last:nth-last-child(1):nth-child(odd) {
-    grid-column: 1 / -1;
-    justify-self: center;
-  } */
 
   /*------------------------------------My Projects---------------------*/
-  
-  /*================== PROJECTS SECTION STYLING ===========*/
-
 
 .prj{
     padding-top: 6rem;
@@ -1516,7 +1504,7 @@ h3 {
     transform: none;
 }
 
-  /*=======================================================================Contact====================================================*/
+  /*=======================================================================Skills====================================================*/
 
   #Skills{
     background-color: #2b2e3b;
@@ -1700,6 +1688,216 @@ h3 {
     transform: translateY(20px);
 }
 
+/* =============================== */
+/* 💡 Media Query for Tablets and Below */
+/* =============================== */
+@media (max-width: 1024px) {
+  .exp-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exp-text {
+    max-width: 90%;
+    margin: 0 10px 20px 10px;
+  }
+
+  .exp-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .right {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .speech-bubble {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .experience-box {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+
+/* =============================== */
+/* 💡 Media Query for Phones */
+/* =============================== */
+@media (max-width: 600px) {
+  .exp-title h3 {
+    font-size: 22px;
+  }
+
+  .exp-title p {
+    font-size: 16px;
+  }
+
+  .exp-year {
+    font-size: 14px;
+  }
+
+  .exp-text h3 {
+    font-size: 20px;
+  }
+
+  .exp-text h3 span {
+    font-size: 24px;
+  }
+
+  .exp-text p,
+  .description,
+  .exp-body ul {
+    font-size: 1em;
+  }
+
+  .job-info h4 {
+    font-size: 20px;
+  }
+
+  .job-info .company {
+    font-size: 18px;
+  }
+
+  .experience-header h3 {
+    font-size: 110%;
+  }
+
+  .toggle-icon {
+    font-size: 1.2rem;
+  }
+
+  .exp-coin {
+    width: 60px;
+    height: 60px;
+  }
+
+  .exp-message {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+}
+
+/*  =========================client projects =========== */
+@media (max-width: 600px) {
+  .cli-card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .cli-bottom{
+    height: 800px;
+  }
+
+  .cli-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cli-meta {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .cli-desc {
+    font-size: 0.95rem;
+  }
+
+  .cli-link {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .cli-message {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .cli-content {
+    flex-direction: column;
+  }
+
+  .cli-text {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .edu-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .edu-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .edu-left .edu-image {
+    max-width: 80%;
+    height: auto;
+    transform: none; /* Remove scaling */
+  }
+
+  .edu-right {
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* ###################### */
+
+@media (max-width: 768px) {
+    .experience-item {
+      flex-direction: column;
+    }
+  
+    .left {
+      flex-direction: row;
+      margin-bottom: 10px;
+    }
+  
+    .timeline-line {
+      height: 4px;
+      width: 100%;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  
+    .right {
+      margin-left: 0;
+    }
+  
+    .speech-bubble::before {
+      top: -10px;
+      left: 20px;
+      border-top: none;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-bottom: 10px solid #81c784;
+    }
+  }
 
 /*============================== Animations ===========================*/
 
@@ -1900,45 +2098,6 @@ h3 {
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
-    }
-    
-    /*================timeline responsive====*/
-    .acc-sec{
-        padding-top: 15%;
-    }
-    .acc-sec h1{
-        font-size: 50px;
-    }
-    .exp-sec h1{
-        font-size: 50px;
-    }
-    .timeline{
-        margin: 50px auto;
-    }
-    .timeline::after{
-        left: 31px;
-    }
-    .containerTline{
-        width: 100%;
-        padding-left: 80px;
-        padding-right: 25px;
-    }
-    .text-box{
-        font-size: 13px;
-    }
-    .text-box small{
-        font-size: 10px;
-    }
-    .right-container{
-        left: 0;
-    }
-    .left-container img, .right-container img{
-        left: 10px;
-    }
-    .left-container-arrow, .right-container-arrow{
-        border-right: 15px solid #fff;
-        border-left: 0;
-        left: -15px;
     }
 }
 /*=============================Responsive Small phone==============*/
