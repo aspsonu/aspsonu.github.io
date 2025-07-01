@@ -5,7 +5,7 @@
 I'm **Sai Pranith Arandkar**, a passionate **Java Developer** with 2.4 years of experience in building scalable backend systems and enterprise web applications using **Java, Spring Boot**, and **REST APIs**. This is my personal portfolio website built using HTML, CSS, and JavaScript, hosted via GitHub Pages.
 
 🔗 **Live Site:** [https://aspsonu.github.io](https://www.saipranith.com/)
-📄 [View My Resume](https://github.com/aspsonu/aspsonu.github.io/blob/main/Sai_Pranith_Arandkar_Resume.pdf)
+📄 [View My Resume](https://github.com/aspsonu/aspsonu.github.io/blob/main/Sai_Pranith_Arandkar-Resume.pdf)
 
 ---
 
