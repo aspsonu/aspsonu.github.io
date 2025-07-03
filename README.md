@@ -1,32 +1,61 @@
-## Hi there 👋
+# 💼 Sai Pranith Arandkar – Developer Portfolio
 
-# 🚀 Sai Pranith Arandkar – Portfolio Website
+🔗 [Visit Portfolio](https://www.saipranith.com)
 
-I'm **Sai Pranith Arandkar**, a passionate **Java Developer** with 2.4 years of experience in building scalable backend systems and enterprise web applications using **Java, Spring Boot**, and **REST APIs**. This is my personal portfolio website built using HTML, CSS, and JavaScript, hosted via GitHub Pages.
+Welcome to my personal portfolio website, built to showcase my experience, skills, and professional journey in the field of software engineering. This responsive and modern portfolio includes details of my work, academic background, certifications, projects, and ways to get in touch.
 
-🔗 **Live Site:** [https://aspsonu.github.io](https://www.saipranith.com/)
-📄 [View My Resume](https://github.com/aspsonu/aspsonu.github.io/blob/main/Sai_Pranith_Arandkar-Resume.pdf)
+## 🚀 About Me
+
+I'm a Java Developer with a strong foundation in backend systems, Spring Framework, and full-stack development. I thrive on creating scalable, secure, and maintainable software solutions. With real-world experience at Infosys and academic exposure through my Master's at Northwest Missouri State University, I blend both industry and research mindsets into my work.
+
+## ✨ Key Highlights
+
+- 💻 **Tech Stack**: Java, Spring Boot, Angular, MySQL, MongoDB, REST APIs, AWS
+- 📚 **Education**:
+  - M.Sc in Information Systems – Northwest Missouri State University
+  - B.Tech in ECE – Nalla Malla Reddy Engineering College
+- 🧠 **Experience**:
+  - Senior Systems Engineer – Infosys Ltd
+  - Graduate Assistant – NWMSU
+- 🛠 **Projects**:
+  - E-Government System for Apple (Client Project)
+  - Vehicle Management System (Full-stack, AWS Deployed)
+  - Eco-Friendly Fridge, Smart Trolley (Hackathon/IoT)
+- 📄 **Resume**: [Download](https://drive.google.com/file/d/17FOv54Dz8F26Gw_IVhljuDFadTe0eJyc/view?usp=sharing)
+- 🌐 **Connect**: [LinkedIn](https://www.linkedin.com/in/dspsonu) • [GitHub](https://github.com/aspsonu) • [YouTube](https://www.youtube.com/@techfriezsolutions)
+
+## 📸 Screenshots
+
+| Landing Page | Experience | Projects |
+|--------------|------------|----------|
+| ![Home](./img/Preview.png) | ![Exp](./img/Experience.jpg) | ![Proj](./img/Hackathon.jpg) |
+
+> For a live preview: **[www.saipranith.com](https://www.saipranith.com)**
+
+## 🧰 Tech Stack Used
+
+- **Frontend**: HTML5, CSS3, JavaScript, TailwindCSS, Boxicons
+- **Backend**: Java, Spring Boot
+- **Database**: MySQL, MongoDB
+- **Other Tools**: GitHub, Postman, Jenkins, Arduino, Android Studio
+- **Cloud/DevOps**: AWS, VS Code, Git
+
+## 🏁 Getting Started
+
+To run locally:
+
+```bash
+git clone https://github.com/aspsonu/aspsonu.github.io
+cd aspsonu.github.io
+open index.html
+```
+
+Or serve with any static hosting service (e.g., GitHub Pages, Netlify).
+
+## 📜 License
+
+This project is licensed under the MIT License. Feel free to use, modify, and share with credit.
 
 ---
 
-## 👨‍💻 About Me
-
-- 🎓 Graduated with MS in Information Systems (May 2025)
-- 💼 2.4 years of experience at **Infosys Ltd** as a Senior Systems Engineer
-- ⚙️ Strong skills in Java, Spring Boot, Microservices, CI/CD, MongoDB, AWS
-- 🤝 Actively looking for Java Developer and Backend Engineer roles
-
----
-
-## 💡 Featured Projects
-
-### 🔷 E-Government Portal (Apple Inc.)  
-- Built a high-performance enterprise web app using **Java, Spring Boot, Hibernate**
-- Integrated **MongoDB**, CI/CD with Jenkins, and logged with **Splunk**
-- Participated in **Agile sprints**, code reviews, and QA coordination
-
-### 🔷 Vehicle Management Portal  
-- Full-stack web app using **Spring Boot, MySQL, Angular**
-- Features: CRUD, role-based access, responsive UI
-
----
+_Designed and developed by Sai Pranith Arandkar._
