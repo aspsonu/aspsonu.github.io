@@ -21,14 +21,13 @@ I'm a Java Developer with a strong foundation in backend systems, Spring Framewo
   - E-Government System for Apple (Client Project)
   - Vehicle Management System (Full-stack, AWS Deployed)
   - Eco-Friendly Fridge, Smart Trolley (Hackathon/IoT)
-- 📄 **Resume**: [Download](https://drive.google.com/file/d/17FOv54Dz8F26Gw_IVhljuDFadTe0eJyc/view?usp=sharing)
+- 📄 **Resume**: [Download](https://drive.google.com/file/d/1oltELJraFltlTzli8zsROzNQf_MYJbXy/view?usp=sharing)
 - 🌐 **Connect**: [LinkedIn](https://www.linkedin.com/in/dspsonu) • [GitHub](https://github.com/aspsonu) • [YouTube](https://www.youtube.com/@techfriezsolutions)
 
 ## 📸 Screenshots
 
-| Landing Page | Experience | Projects |
-|--------------|------------|----------|
-| ![Home](./img/Preview.png) | ![Exp](./img/Experience.jpg) | ![Proj](./img/Hackathon.jpg) |
+<img width="1501" alt="Screenshot 2025-07-03 at 1 00 03 PM" src="https://github.com/user-attachments/assets/0f951f10-6786-4133-b2d5-002fd1a2fe92" />
+
 
 > For a live preview: **[www.saipranith.com](https://www.saipranith.com)**
 
@@ -51,11 +50,5 @@ open index.html
 ```
 
 Or serve with any static hosting service (e.g., GitHub Pages, Netlify).
-
-## 📜 License
-
-This project is licensed under the MIT License. Feel free to use, modify, and share with credit.
-
----
 
 _Designed and developed by Sai Pranith Arandkar._
