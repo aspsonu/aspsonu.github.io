@@ -21,7 +21,7 @@ I'm a Java Developer with a strong foundation in backend systems, Spring Framewo
   - E-Government System for Apple (Client Project)
   - Vehicle Management System (Full-stack, AWS Deployed)
   - Eco-Friendly Fridge, Smart Trolley (Hackathon/IoT)
-- 📄 **Resume**: [Download](https://drive.google.com/file/d/1oltELJraFltlTzli8zsROzNQf_MYJbXy/view?usp=sharing)
+- 📄 **Resume**: [Download](https://drive.google.com/file/d/1EeaoH6sGcOEqZOXDxIGsYjQ4aDpILezb/view?usp=sharing)
 - 🌐 **Connect**: [LinkedIn](https://www.linkedin.com/in/dspsonu) • [GitHub](https://github.com/aspsonu) • [YouTube](https://www.youtube.com/@techfriezsolutions)
 
 ## 📸 Screenshots
